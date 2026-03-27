@@ -107,11 +107,3 @@ if data["cod"] == 200:
     print(f"Condition: {weather}")
 else:
     print("City not found")
----
-
----
-
-### Issue 1: pip not recognized
-
-**Problem:**  
-Running `pip install requests` returned an error:
