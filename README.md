@@ -107,6 +107,7 @@ if data["cod"] == 200:
     print(f"Condition: {weather}")
 else:
     print("City not found")
+---
 ## AI Prompt Journal
 
 This section documents how AI was used to assist in learning and building the project.
