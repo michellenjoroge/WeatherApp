@@ -205,6 +205,53 @@ AI was an effective learning assistant throughout the project.
 
 During development, several issues were encountered. Below are the common problems and how they were resolved.
 
+##  References
+
+The following resources were used to learn and build this project:
+
+---
+
+###  Official Documentation
+
+- Python Documentation: https://docs.python.org/3/  
+- Requests Library Documentation: https://docs.python-requests.org/  
+- Tkinter Documentation: https://docs.python.org/3/library/tkinter.html  
+- OpenWeather API: https://openweathermap.org/api  
+
+---
+
+###  Video Tutorials
+
+- Python Tkinter Tutorial (GUI Development)  
+  https://www.youtube.com/watch?v=YXPyB4XeYLA  
+
+- Python API Tutorial (Using Requests)  
+  https://www.youtube.com/watch?v=tb8gHvYlCFs  
+
+---
+
+### Helpful Blog Posts & Articles
+
+- How to Use APIs in Python  
+  https://realpython.com/api-integration-in-python/  
+
+- Beginner Guide to Tkinter  
+  https://www.geeksforgeeks.org/python-gui-tkinter/  
+
+- StackOverflow (Error Fixes & Debugging)  
+  https://stackoverflow.com  
+
+---
+
+### Summary
+
+These resources helped in:
+- Understanding Python basics  
+- Learning GUI development with Tkinter  
+- Integrating APIs into applications  
+- Debugging common errors  
+
+---
 ---
 
 ### Issue 1: pip not recognized
