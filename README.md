@@ -199,3 +199,15 @@ Using AI significantly improved the development process by:
 AI was an effective learning assistant throughout the project.
 
 ---
+
+
+## Common Issues & Fixes
+
+During development, several issues were encountered. Below are the common problems and how they were resolved.
+
+---
+
+### Issue 1: pip not recognized
+
+**Problem:**  
+Running `pip install requests` returned an error:
