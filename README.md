@@ -42,7 +42,160 @@ Weather apps on smartphones use APIs to fetch live weather data.
 - Python 3.14.3 installed
 - VS Code or PyCharm
 
-**Required Packages:**
-```bash
-python -m pip install requests
-python -m pip install pillow
+## Installation & Setup Instructions
+
+Follow these steps to set up and run the project:
+
+### 1. Install Python
+- Download Python from: https://www.python.org/downloads/  
+- Install it on your system  
+- Make sure to check **"Add Python to PATH"** during installation  
+
+---
+
+### 2. Install VS Code
+- Download from: https://code.visualstudio.com/  
+- Install the application  
+- Open VS Code and install the **Python Extension**
+
+---
+
+### 3. Create Project Folder
+
+Open your terminal and run:
+
+## Minimal Working Example
+
+### Description
+
+This example demonstrates how the application works at a basic level.
+
+- The user enters a city name  
+- The app sends a request to the OpenWeather API  
+- It retrieves weather data  
+- It displays the temperature and weather condition in the GUI  
+
+---
+
+### Example Code
+
+```python
+import requests
+
+# Replace with your actual API key
+API_KEY = "your_api_key_here"
+
+# Ask user for city name
+city = input("Enter city: ")
+
+# API URL
+url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
+
+# Send request to API
+response = requests.get(url)
+
+# Convert response to JSON
+data = response.json()
+
+# Check if request was successful
+if data["cod"] == 200:
+    temp = data["main"]["temp"]  # Get temperature
+    weather = data["weather"][0]["description"]  # Get weather description
+
+    # Display result
+    print(f"Temperature: {temp}°C")
+    print(f"Condition: {weather}")
+else:
+    print("City not found")
+## AI Prompt Journal
+
+This section documents how AI was used to assist in learning and building the project.
+
+---
+
+### Prompt 1
+
+**Prompt Used:**  
+"Give me a simple Python project using an API"
+
+**Link to Curriculum:**  
+https://ai.moringaschool.com/
+
+**AI Response Summary:**  
+The AI suggested building a weather application using an API.
+
+**Helpful Response Extract:**  
+“The AI recommended using the OpenWeather API to fetch real-time weather data.”
+
+**Evaluation:**
+ Very helpful — helped in choosing a practical and beginner-friendly project idea.
+
+---
+
+### Prompt 2
+
+**Prompt Used:**  
+"How to create a GUI using Tkinter in Python"
+
+**Link to Curriculum:**  
+https://ai.moringaschool.com/
+
+**AI Response Summary:**  
+Provided step-by-step guidance on creating a window, buttons, and labels.
+
+**Helpful Response Extract:**  
+“The AI showed how to use Tkinter widgets like Label, Entry, and Button.”
+
+**Evaluation:**  
+Very helpful — made it easy to build the user interface.
+
+---
+
+### Prompt 3
+
+**Prompt Used:**  
+"How to connect Python to an API and fetch data"
+
+**Link to Curriculum:**  
+https://ai.moringaschool.com/
+
+**AI Response Summary:**  
+Explained how to use the `requests` library and handle JSON responses.
+
+**Helpful Response Extract:**  
+“The AI explained how to send a GET request and extract data from JSON.”
+
+**Evaluation:**  
+Helpful — improved understanding of API integration.
+
+---
+
+### Prompt 4
+
+**Prompt Used:**  
+"Fix pip not recognized error in Python"
+
+**Link to Curriculum:**  
+https://ai.moringaschool.com/
+
+**AI Response Summary:**  
+Suggested using `python -m pip` and checking PATH settings.
+
+**Helpful Response Extract:**  
+“The AI recommended using python -m pip instead of pip directly.”
+
+**Evaluation:**
+ Very helpful — resolved installation issue quickly.
+
+
+
+### Overall Reflection
+
+Using AI significantly improved the development process by:
+- Speeding up problem-solving  
+- Providing clear step-by-step guidance  
+- Helping debug errors quickly  
+
+AI was an effective learning assistant throughout the project.
+
+---
